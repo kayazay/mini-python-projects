@@ -43,8 +43,7 @@ def btc_crawler():
 
 def TweetIt():
     # get image from url
-    img_url = 'https://svbtleusercontent.com/3r8bHQsSTfr7t7vam88Snk0xspap.png'
-    res = requests.get(img_url, stream=True)
+    res = requests.get(af.img_url, stream=True)
     if not res.status_code == 200:
         exit('Image not found')
     print('Render image from url')
