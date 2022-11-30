@@ -2,7 +2,7 @@
 
 ## This is a simple, dockerized web crawler application made with Python.
 
-<img src = "https://user-images.githubusercontent.com/60517587/204914487-9482816c-c497-48c9-8509-5f1822a7ebf3.gif" width=80% height=20% />
+<img src = "https://user-images.githubusercontent.com/60517587/204914487-9482816c-c497-48c9-8509-5f1822a7ebf3.gif" width=60% height=20% />
 
 And yes, this is infact my first time containerizing with Docker 😃 
 
