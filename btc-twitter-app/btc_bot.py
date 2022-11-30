@@ -10,7 +10,6 @@ from datetime import datetime as dt
 from PIL import Image
 from sys import exit
 
-
 def btc_crawler():
     url = 'https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest'
     headers = {
@@ -43,7 +42,8 @@ def btc_crawler():
 
 def TweetIt():
     # get image from url
-    res = requests.get(af.img_url, stream=True)
+    img_url = 'https://svbtleusercontent.com/3r8bHQsSTfr7t7vam88Snk0xspap.png'
+    res = requests.get(img_url, stream=True)
     if not res.status_code == 200:
         exit('Image not found')
     print('Render image from url')
@@ -68,6 +68,7 @@ def TweetIt():
     tweet = btc_crawler()
     if tweet:
         print('Make the actual tweet')
+        #print(tweet)
         status = api.update_status(status=tweet, media_ids= [media.media_id]
         )
         print('Successfully tweeted')
